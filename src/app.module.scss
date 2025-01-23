@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  background-image: url("./assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  gap: 4em;
+}
+
+.semaforo {
+  background-color: #333;
+  height: 20em;
+  width: 7.7em;
+  border-radius: 15px;
+  border: solid 3px #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: #222222ab 0px 3px 5px;
+  }
+}
+
+.luz {
+  background-color: #555;
+  border: solid 3px #444;
+  height: 5.5em;
+  width: 5.5em;
+  border-radius: 50%;
+}
+
+.btn {
+  width: 45vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  button {
+    height: 6vh;
+    width: 13vw;
+    border-radius: 15px;
+    color: #222;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: #222222ab 0px 3px 5px;
+    }
+  }
+}
+
+.btnVerde {
+  background-color: #4caf50;
+  border: solid 2px #409443;
+}
+
+.btnAmarelo {
+  background-color: #ffeb3b;
+  border: solid 2px #d1c131;
+}
+
+.btnVermelho {
+  background-color: #f44336;
+  border: solid 2px #c7372d;
+}
