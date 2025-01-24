@@ -17,7 +17,7 @@ main {
   justify-content: center;
   align-items: center;
   background-position: center;
-  gap: 4em;
+  gap: 3em;
 }
 
 .semaforo {
@@ -47,17 +47,17 @@ main {
 }
 
 .btn {
-  width: 45vw;
+  width: 30%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   button {
-    height: 6vh;
-    width: 13vw;
+    height: 6.5vh;
+    width: 7em;
     border-radius: 15px;
     color: #222;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -69,9 +69,9 @@ main {
   }
 }
 
-.btnVerde {
-  background-color: #4caf50;
-  border: solid 2px #409443;
+.btnVermelho {
+  background-color: #f44336;
+  border: solid 2px #c7372d;
 }
 
 .btnAmarelo {
@@ -79,7 +79,53 @@ main {
   border: solid 2px #d1c131;
 }
 
-.btnVermelho {
+.btnVerde {
+  background-color: #4caf50;
+  border: solid 2px #409443;
+}
+
+.vermelho {
   background-color: #f44336;
-  border: solid 2px #c7372d;
+}
+
+.amarelo {
+  background-color: #ffeb3b;
+}
+
+.verde {
+  background-color: #4caf50;
+}
+
+.rosa {
+  background-color: #564caf;
+}
+
+@media (max-width: 480px) {
+  .btn {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 25vh;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .btn {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 25vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .btn {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .btn {
+    width: 50%;
+  }
 }
